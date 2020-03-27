@@ -5,28 +5,25 @@ using System.Web;
 
 namespace WebFormsDemo
 {
-    public class Person
+    public class Student
     {
-        public string SIN { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public double Wage { get; set; }
-        public string Phone { get; set; }
-        public Person()
+        public int StudentID { get; set; }
+        public string StudentName { get; set; }
+        public double StudentCredit { get; set; }
+        public string ErmgConPhone { get; set; }
+        public Student()
         {
          
         }
-        public Person(string sin,
+        public Student(int sid,
                         string name,
-                        int age,
-                        double wage,
+                        double credit,                      
                         string phone)
         {
-            SIN = sin;
-            Name = name;
-            Age = age;
-            Wage = wage;
-            Phone = phone;
+            StudentID = sid;
+            StudentName = name;
+            StudentCredit = credit;
+            ErmgConPhone = phone;
         }
     }
 }
